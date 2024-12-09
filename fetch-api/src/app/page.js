@@ -5,6 +5,9 @@ export default function Home() {
     <div>
       <h1>Dynamic Routing</h1>
       <Link href="/productlist">Go to productlist Page</Link>
+      <br />
+      <br />
+      <Link href="/studentlist">Go to studentlist Page</Link>
     </div>
   );
 }
