@@ -9,4 +9,5 @@ export function middleware(req) {
 
 export const config = {
   matcher: ["/about/:path*", "/studentlist/:path*"],
+  // matcher: ["/about"],
 };
