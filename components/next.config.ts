@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["encrypted-tbn0.gstatic.com"],
   },
+  // output: "export"
 };
 
 export default nextConfig;
