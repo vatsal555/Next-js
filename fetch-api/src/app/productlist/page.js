@@ -18,7 +18,7 @@ export default function Page() {
   }, []);
   return (
     <div>
-      <h1>Fetch Api with Next js</h1>
+      <h1>Fetch Api with Client Slide Component</h1>
       {product.map((item) => (
         <div key={item.title}>
           <h3>title : {item.title}</h3>
