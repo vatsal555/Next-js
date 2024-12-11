@@ -10,3 +10,17 @@ export function GET(req: any, res: any) {
     { status: 200 }
   );
 }
+
+export async function POST(req: any) {
+  const payLoad = await req.json();
+  // console.log(payLoad);
+  if (!payLoad.id || !payLoad.name || !payLoad.email || !payLoad.age) {
+    return NextResponse.json(
+      { result: "request data is missing", success: false },
+      { status: 400 }
+    );
+  } else {
+  }
+
+  return NextResponse.json({ result: payLoad, success: true }, { status: 200 });
+}
