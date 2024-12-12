@@ -22,18 +22,17 @@ export default function Page({ params }: any) {
   };
 
   const updateUser = async () => {
-    let result = await fetch("http://localhost:3000/api/users" + id. {
-      method : "POST",
-      body : JSON.stringify({name, age, email})
+    let result = await fetch("http://localhost:3000/api/users" + id, {
+      method: "POST",
+      body: JSON.stringify({ name, age, email }),
     });
-    result = await result.json()
+    result = await result.json();
     // console.log(result);
     if (result.success) {
-      alert('User Information Updated')
+      alert("User Information Updated");
     } else {
-      alert('Please try with valid input')
+      alert("Please try with valid input");
     }
-    
   };
   return (
     <div>
