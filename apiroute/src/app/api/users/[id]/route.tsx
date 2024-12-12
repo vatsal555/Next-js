@@ -45,3 +45,18 @@ export async function PUT(req: any, content: any) {
     );
   }
 }
+
+export function DELETE(req: any, content: any) {
+  const id = content.params.id;
+  if (id) {
+    return NextResponse.json(
+      { result: "User Deleted", success: true },
+      { status: 200 }
+    );
+  } else {
+    return NextResponse.json(
+      { result: "Internal Error, Please try after sometimes", success: false },
+      { status: 400 }
+    );
+  }
+}
