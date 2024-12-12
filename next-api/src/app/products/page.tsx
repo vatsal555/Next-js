@@ -10,7 +10,7 @@ export const getProduct = async () => {
 
 export default async function Page() {
   const products = await getProduct();
-  console.log(products);
+  // console.log(products);
 
   return (
     <div>

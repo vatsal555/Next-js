@@ -1,10 +1,8 @@
 "use client";
 import { useState } from "react";
 import "./../style.css";
-import { useRouter } from "next/navigation";
-export default function Page() {
-  const navigation = useRouter();
 
+export default function Page() {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [color, setColor] = useState("");
