@@ -26,3 +26,22 @@ export async function POST(req: any) {
 
   return NextResponse.json({ result: payLoad, success: true }, { status: 200 });
 }
+
+export async function PUT(req: any, content: any) {
+  const payLoad = await req.json();
+  payLoad.id = content.params.id;
+  // console.log(payLoad);
+  // console.log(content.params.id);
+
+  if (!payLoad.id || !payLoad.name || !payLoad.age || !payLoad.email) {
+    return NextResponse.json(
+      { result: "request data is not valid", success: false },
+      { status: 400 }
+    );
+  } else {
+    return NextResponse.json(
+      { result: payLoad, success: false },
+      { status: 201 }
+    );
+  }
+}
