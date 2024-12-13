@@ -41,7 +41,7 @@ const Slice = createSlice({
         return user.id !== action.payload;
       });
       state.users = data;
-      localStorage.removeItem("users");
+      localStorage.setItem("users", JSON.stringify(data));
     },
   },
   extraReducers: (builder) => {
