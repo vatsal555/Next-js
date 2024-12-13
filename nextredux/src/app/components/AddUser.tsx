@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { addUser } from "../redux/slice";
 import { useDispatch } from "react-redux";
+import Link from "next/link";
 
 export default function AddUser() {
   const [name, setName] = useState("");
@@ -27,6 +28,9 @@ export default function AddUser() {
       <button className="add-user-btn" onClick={onSubmit}>
         Add User
       </button>
+      <Link className="color" href="/removeuser">
+        Remove User
+      </Link>
     </div>
   );
 }

@@ -41,6 +41,10 @@ body {
   justify-content: space-between;
 }
 
+.color {
+  color: aqua;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
