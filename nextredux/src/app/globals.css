@@ -4,7 +4,7 @@ body {
 }
 
 .add-user {
-  height: 200px;
+  min-height: 200px;
   padding: 10px;
   border: 1px solid orange;
   padding-left: 50px;

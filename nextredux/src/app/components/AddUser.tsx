@@ -27,9 +27,16 @@ export default function AddUser() {
       />
       <button className="add-user-btn" onClick={onSubmit}>
         Add User
-      </button>
+      </button>{" "}
+      <br />
+      <br />
       <Link className="color" href="/removeuser">
         Remove User
+      </Link>
+      <br />
+      <br />
+      <Link className="color" href="/todolist">
+        Go to todo page
       </Link>
     </div>
   );
