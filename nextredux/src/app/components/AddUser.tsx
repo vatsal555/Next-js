@@ -38,6 +38,11 @@ export default function AddUser() {
       <Link className="color" href="/todolist">
         Go to todo page
       </Link>
+      <br />
+      <br />
+      <Link className="color" href="/apiusers">
+        Go to API User List Page
+      </Link>
     </div>
   );
 }
