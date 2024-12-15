@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export function GET(req: any, content: any) {
   console.log(content.params);
 
-  // const userData = users.filter((item) => item.id === res.params.id);
+  // const userData = users.filter((item) => item.id == res.params.id);
   return NextResponse.json({ result: true });
   // return NextResponse.json(
   //   userData.length == 0
