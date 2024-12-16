@@ -3,14 +3,14 @@ import { NextResponse } from "next/server";
 
 export function GET(req: any, content: any) {
   // console.log(content.params);
-  // const userData = users.filter((item) => item.id === res.params.id);
+  const userData = users.filter((item) => item.id == content.params.id);
   // return NextResponse.json({ result: true });
-  // return NextResponse.json(
-  //   userData.length == 0
-  //     ? { result: "No Data Found", success: false }
-  //     : { result: userData[0], success: true },
-  //   { status: 200 }
-  // );
+  return NextResponse.json(
+    userData.length == 0
+      ? { result: "No Data Found", success: false }
+      : { result: userData[0], success: true },
+    { status: 200 }
+  );
 }
 
 export async function POST(req: any) {
